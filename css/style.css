@@ -1,0 +1,40 @@
+.header .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .navbar ul {
+  list-style: none;
+}
+
+.header .navbar ul li {
+  display: inline-block;
+  padding: 10px 15px;
+}
+
+.header .navbar ul .logo {
+  margin-right: auto;
+}
+
+.header .navbar ul a {
+  text-decoration: none;
+  color: black;
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.describe {
+  max-width: 50%;
+}
+/*# sourceMappingURL=style.css.map */

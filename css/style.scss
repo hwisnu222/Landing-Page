@@ -1,0 +1,55 @@
+@import 'color';
+
+.container {
+    width: 80%;
+
+    .header {
+        .navbar {
+            display: flex;
+
+            ul {
+                list-style: none;
+
+                li {
+                    display: inline-block;
+                    padding: 10px 15px;
+                }
+
+                .logo {
+                    margin-right: auto;
+                }
+
+
+                a {
+                    text-decoration: none;
+                    color: $dark;
+                }
+            }
+
+
+
+        }
+
+
+    }
+
+    .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid black;
+        background-color: black;
+    }
+
+    .describe {
+        max-width: 50%;
+        width: 10%;
+
+        .button {
+            width: 80px;
+            height: 56px;
+            background-color:
+        }
+    }
+
+}
