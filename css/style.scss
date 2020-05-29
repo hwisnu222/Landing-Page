@@ -1,55 +1,84 @@
-@import 'color';
+@import "reset";
+@import "color";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+body {
+  display: flex;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+}
 
 .container {
-    width: 80%;
+  width: 80%;
 
-    .header {
-        .navbar {
-            display: flex;
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
 
-            ul {
-                list-style: none;
-
-                li {
-                    display: inline-block;
-                    padding: 10px 15px;
-                }
-
-                .logo {
-                    margin-right: auto;
-                }
-
-
-                a {
-                    text-decoration: none;
-                    color: $dark;
-                }
-            }
-
-
-
-        }
-
-
+    .logo {
+      text-decoration: none;
+      font-weight: 600;
+      color: $dark;
     }
 
-    .content {
+    nav {
+      display: flex;
+
+      ul {
+        list-style: none;
+        display: flex;
+
+        li {
+          display: inline-block;
+          padding: 10px 15px;
+        }
+      }
+
+      a {
+        text-decoration: none;
+        color: $dark;
+        font-size: 16px;
+      }
+      .signin {
         display: flex;
         justify-content: center;
         align-items: center;
-        border: 1px solid black;
-        background-color: black;
+        padding: 3px 25px;
+        border-radius: 3px;
+        font-weight: 500;
+        background-color: $lightred;
+        color: $white;
+        margin-left: 50px;
+      }
+    }
+  }
+
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .describe {
+    max-width: 50%;
+
+    h2 {
+      margin-bottom: 20px;
     }
 
-    .describe {
-        max-width: 50%;
-        width: 10%;
-
-        .button {
-            width: 80px;
-            height: 56px;
-            background-color:
-        }
+    p {
+      line-height: 30px;
+      text-align: justify;
     }
 
+    #button {
+      border: none;
+      padding: 8px 20px;
+      width: 100px;
+      background-color: $lightred;
+      color: $white;
+      margin-top: 20px;
+    }
+  }
 }

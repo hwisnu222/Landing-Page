@@ -1,28 +1,85 @@
-.header .navbar {
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  width: 80%;
+}
+
+.container header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 20px;
+}
+
+.container header .logo {
+  text-decoration: none;
+  font-weight: 600;
+  color: #181227;
+}
+
+.container header nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.header .navbar ul {
+.container header nav ul {
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.header .navbar ul li {
+.container header nav ul li {
   display: inline-block;
   padding: 10px 15px;
 }
 
-.header .navbar ul .logo {
-  margin-right: auto;
-}
-
-.header .navbar ul a {
+.container header nav a {
   text-decoration: none;
-  color: black;
+  color: #181227;
+  font-size: 16px;
 }
 
-.content {
+.container header nav .signin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3px 25px;
+  border-radius: 3px;
+  font-weight: 500;
+  background-color: #db4b4d;
+  color: white;
+  margin-left: 50px;
+}
+
+.container .content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -34,7 +91,25 @@
           align-items: center;
 }
 
-.describe {
+.container .describe {
   max-width: 50%;
+}
+
+.container .describe h2 {
+  margin-bottom: 20px;
+}
+
+.container .describe p {
+  line-height: 30px;
+  text-align: justify;
+}
+
+.container .describe #button {
+  border: none;
+  padding: 8px 20px;
+  width: 100px;
+  background-color: #db4b4d;
+  color: white;
+  margin-top: 20px;
 }
 /*# sourceMappingURL=style.css.map */
